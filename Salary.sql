@@ -1,8 +1,8 @@
 create table salary (
-					id serial not null,
-					first_name varchar (50) not null,
-					department varchar (50) not null,
-					gross_salary decimal not null
+		id serial not null,
+		first_name varchar (50) not null,
+		department varchar (50) not null,
+		gross_salary decimal not null
 );
 
 insert into salary 
@@ -130,5 +130,3 @@ select
 	last_value(s.first_name) over(partition by s.department) as lowest_dep_salary
 from 
 	salary s
-
-
