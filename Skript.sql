@@ -62,7 +62,6 @@ select lower(first_name), lower(last_name), customer_id, store_id, email, create
 --и стоимость аренды указана от 0.00 до 3.00 включительно, 
 --а также фильмы c рейтингом "PG-13" и стоимостью аренды больше или равной 4.00.
 
-
 select * from film where (rating = 'R' and rental_rate >= 0.00 and rental_rate <= 3.00) or (rating = 'PG-13'  and rental_rate >= 4.00)
 
 
