@@ -15,8 +15,6 @@ left join customer c2 on a.address_id = c2.address_id
 left join country c3 on c.country_id =c3.country_id 
 
 
-
-
 --ЗАДАНИЕ №2
 --С помощью SQL-запроса посчитайте для каждого магазина количество его покупателей.
 
